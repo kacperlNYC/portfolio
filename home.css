@@ -1,0 +1,47 @@
+.grid{
+    padding: 4em;
+    display: grid;
+    gap: 20px;
+}
+
+#heading{
+    font-size: 48px;
+    text-align: center;
+    line-height: 0px;
+}
+
+hr {
+    width: 66%;
+    height: 4px;
+    background-color: white;
+}
+
+#text {
+    font-size: 24px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+@media screen and (min-width:1024px){
+    .grid {
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+
+    .grid #heading {
+        grid-column: span 3;
+        grid-row: span 1;
+    }
+
+    .grid #text {
+        grid-column: span 3;
+        grid-row: span 2;
+    }
+
+    .grid #image {
+        grid-column: span 2;
+        grid-row: span 4;
+        background: linear-gradient(red, rgb(36, 36, 255));
+        border-radius: 20px;
+    }
+}
