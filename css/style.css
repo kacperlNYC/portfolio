@@ -22,12 +22,20 @@ a {
 }
 
 nav a {
+    background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
+    background-size: 200px;
+    background-repeat: no-repeat;
+    background-position: 0px -100px;
+    -webkit-background-clip: text;
+        background-clip: text;
+    color: white;
+    transition-duration: 500ms;
     font-weight: 200;
-    transition-duration: 300ms;
 }
 
 nav a:hover {
-    color: cornflowerblue;
+    background-position: 0px;
+    color: transparent;
 }
 
 @media screen and (min-width:870px) {
