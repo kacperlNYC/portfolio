@@ -1,0 +1,68 @@
+/* Desktop */
+@media screen and (min-width:870px) {
+    main {
+        margin: 40px;
+        font-size: xx-large;
+    }
+    
+    main >p {
+        width: 80%;
+    }
+    
+    .flexContainer {
+        display: flex;
+        height: 400px;
+        gap: 200px;
+    }
+
+    .gradient {
+        border-radius: 15px;
+    
+        background: linear-gradient(162deg, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+    }
+    
+    .gradient img {
+        max-width: 700px;
+        border-radius: 15px;
+    
+        transform: translate(30px, 30px);
+        z-index: 1;
+    
+    }
+}
+
+/* Mobile */
+@media screen and (max-width:869px){
+    main {
+        margin: 20px;
+        font-size: large;
+    }
+
+    .flexContainer {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        align-items: center;
+    }
+
+    .imgContainer {
+        display: flex;
+        justify-content: center;
+    }
+
+    .gradient {
+        max-width: 80%;
+        border-radius: 15px;
+    
+        background: linear-gradient(162deg, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+    }
+
+    .gradient img {
+        max-width: 100%;
+        border-radius: 15px;
+    
+        transform: translate(30px, 30px);
+        z-index: 1;
+    }
+}
+
