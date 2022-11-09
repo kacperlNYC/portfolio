@@ -2,6 +2,7 @@
 @media screen and (min-width:870px) {
     main {
         margin: 40px;
+        margin-top: 100px;
         font-size: xx-large;
     }
     
@@ -32,9 +33,10 @@
 }
 
 /* Mobile */
-@media screen and (max-width:869px){
+@media screen and (max-width:870px){
     main {
         margin: 20px;
+        margin-top: 100px;
         font-size: large;
     }
 

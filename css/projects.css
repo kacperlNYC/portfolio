@@ -1,0 +1,19 @@
+
+@media screen and (min-width:870px) {
+    main {
+        margin: 80px;
+    }
+
+    .project {
+        display: flex;
+    }
+
+    .info {
+        width: 30%;
+    }
+
+    .gallery {
+        width: 70%;
+        display: grid;
+    }
+}

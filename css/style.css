@@ -11,9 +11,17 @@ body {
     margin: 0;
 }
 
+
 nav {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 2;
+    overflow: hidden;
+
     background-color: var(--sub-bg-color);
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(100px);
+    opacity: 0.9;
 }
 
 a {
@@ -45,19 +53,17 @@ nav a:hover {
         padding-right: 4em;
         padding-top: 0.5em;
         padding-bottom: 0.5em;
+
     }
 
     nav div {
         display: flex;
-    }
-
-    nav h2 {
-        padding-left: 1em;
-        padding-right: 1em;
+        gap: 70px;
+        margin-right: 100px;
     }
 }
 
-@media screen and (max-width:869px) {
+@media screen and (max-width:870px) {
     nav {
         display: flex;
         justify-content: space-between;
@@ -87,7 +93,7 @@ nav div:first-child h2 {
 }
 
 nav div:first-child h2:hover {
-    background-position: 12em;
+    background-position: 9.2em;
 }
 
 /* width */
@@ -95,18 +101,18 @@ nav div:first-child h2:hover {
     width: 15px;
   }
   
-  /* Track */
-  ::-webkit-scrollbar-track {
-    --sub-bg-color: rgb(30, 30, 30);
-  }
-  
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: #555;
-    transition-duration: 100ms;
-  }
-  
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-    background: #888;
-  }
+/* Track */
+::-webkit-scrollbar-track {
+--sub-bg-color: rgb(30, 30, 30);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+background: #555;
+transition-duration: 100ms;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+background: #888;
+}
