@@ -7,19 +7,20 @@
     <title>Home</title>
     <link href="css/style.css" rel="stylesheet">
     <link href="css/home.css" rel="stylesheet">
+    <script type="text/javascript" src="js/script.js"></script>
 </head>
 <body>
     <nav>
         <div>
-            <h2>Kacper Letowski</h2>
+            <h2><a href="index.html">Kacper Letowski</a></h2>
         </div>
-        <div>
+        <div id="redirects">
+            <h2 id="home"><a href="index.html">Home</a></h2>
             <h2><a href="aboutMe.html">About Me</a></h2>
             <h2><a href="skills.html">Skills</a></h2>
             <h2><a href="projects.html">Projects</a></h2>
         </div>
     </nav>
-
 
     <main>
         <div id="heading">
@@ -34,6 +35,7 @@
         <div id="text">
             <p>My name is <i>kat͡s.pɛr</i>.</p>
             <p>I'm a Senior at Brooklyn Technical High School who majors in computer science. In my spare time, I love to program, listen to all sorts of music, binge TV shows, and play video games with my friends.</p>
+            <button onclick="redirect('aboutMe.html');">More About Me</button>
         </div>
         
     </main>
