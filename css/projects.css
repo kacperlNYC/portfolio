@@ -24,6 +24,7 @@
     object-fit: cover;
     border-radius: 10px;
     max-height: 400px;
+    margin: auto;
 }
 
 /* Desktop */

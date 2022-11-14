@@ -37,19 +37,29 @@ main{
         grid-row: span 2;
     }
 
+
     main #image {
         padding-top: 2em;
         grid-column: span 2;
         grid-row: span 4;
-        border-radius: 20px;
+
         display: flex;
         justify-content: center;
         align-items: center;
     }
 
-    img {
+    .gradient {
+        border-radius: 15px;
         max-width: 75%;
+        max-height: 100%;
+    
+        background: linear-gradient(162deg, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+    }
+
+    img {
+        max-width: 100%;
         border-radius: 20px;
+        transform: translate(50px, 40px);
     }
 
     .line {
@@ -76,16 +86,27 @@ main{
         justify-content: center;
     }
 
-    img {
-        max-width: 70%;
+    .gradient {
         border-radius: 20px;
+        max-height: 700px;
+    
+        background: linear-gradient(162deg, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+        transform: translate(-25px, -25px);
+
+    }
+
+    img {
+        max-height: 100%;
+        border-radius: 20px;
+
+        transform: translate(35px, 35px);
     }
 
     .line {
         width:80%;
         height: 4px;
-        background-color: white;
-        border: 1px solid white;
+        background: linear-gradient(90deg, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+        border-radius: 4px;
     }
 }
 

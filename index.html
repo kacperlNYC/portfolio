@@ -9,7 +9,7 @@
     <link href="css/home.css" rel="stylesheet">
     <script type="text/javascript" src="js/script.js"></script>
 </head>
-<body>
+<body onload="init();">
     <nav>
         <div>
             <h2><a href="index.html">Kacper Letowski</a></h2>
@@ -29,7 +29,9 @@
         </div>
 
         <div id="image">
-            <img src="images/malte-schmidt.jpg">
+            <div class="gradient">
+                <img src="images/malte-schmidt.jpg" class="class">
+            </div>
         </div>
 
         <div id="text">
@@ -39,5 +41,11 @@
         </div>
         
     </main>
+
+    <footer>
+        <a href="https://github.com/kacperlet">GitHub</a>
+        <a href="https://twitter.com/kacperlet">Twitter</a>
+        <a href="">Discord</a>
+    </footer>
 </body>
 </html>
