@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link href="css/style.css" rel="stylesheet">
-    <link href="css/home.css" rel="stylesheet">
+    <link href="css/feedback.css" rel="stylesheet">
     <script type="text/javascript" src="js/script.js"></script>
 </head>
 <body onload="init();">
@@ -23,23 +23,25 @@
     </nav>
 
     <main>
-        <div id="heading">
-            <h1>Hello!</h1>
-            <div class="line"></div>
-        </div>
+        <h1>Feedback</h1>
+        <h3>I'm always open to any suggestions about how I can improve!</h3>
 
-        <div id="image">
-            <div class="gradient">
-                <img src="images/malte-schmidt.jpg" class="class">
+        <form action="https://formspree.io/f/xeqdrbbr" method="post" id="form1">
+            <div class="flexcontainer">
+                <div id="first">
+                    <label for="name">Name</label>
+                    <input name="Name" id="name" type="text">
+
+                    <label for="email">Email</label>
+                    <input name="Email" id="email" type="email">
+                </div>
+                <div id="second">
+                    <label for="feedback">Feedback</label>
+                    <textarea name="Feedback" id="feedback"></textarea>
+                </div>
             </div>
-        </div>
-
-        <div id="text">
-            <p>My name is <i>kat͡s.pɛr</i>.</p>
-            <p>I'm a Senior at Brooklyn Technical High School who majors in computer science. In my spare time, I love to program, listen to all sorts of music, binge TV shows, and play video games with my friends.</p>
-            <button onclick="redirect('aboutMe.html');">More About Me</button>
-        </div>
-        
+            <button type="submit">Submit</button>
+        </form>
     </main>
 
     <footer>

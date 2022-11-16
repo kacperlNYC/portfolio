@@ -25,6 +25,7 @@ main{
     main {
         grid-template-columns: repeat(5, 1fr);
         grid-template-rows: repeat(3, 1fr);
+        max-height: calc(100vh - 200px);
     }
 
     main #heading {
@@ -56,10 +57,10 @@ main{
         background: linear-gradient(162deg, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
     }
 
-    img {
+    main img {
         max-width: 100%;
         border-radius: 20px;
-        transform: translate(50px, 40px);
+        transform: translate(25px, 20px);
     }
 
     .line {
@@ -95,7 +96,7 @@ main{
 
     }
 
-    img {
+    main img {
         max-height: 100%;
         border-radius: 20px;
 
