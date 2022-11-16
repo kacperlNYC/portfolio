@@ -9,6 +9,7 @@ body {
     color: white;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin: 0;
+    overflow-X: hidden;
 }
 
 
@@ -76,6 +77,7 @@ a {
         align-items: center;
         padding-top: 0.5em;
         padding-bottom: 0.5em;
+        font-size: small;
     }
 
     nav div:nth-of-type(odd) {

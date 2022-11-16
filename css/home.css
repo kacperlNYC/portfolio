@@ -69,6 +69,7 @@ main{
         background: linear-gradient(90deg, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
         border-radius: 4px;
     }
+
 }
 
 @media screen and (max-width:1023px) {
@@ -127,4 +128,9 @@ button:hover {
     background-color: white;
     color:rgb(15, 15, 15);
     cursor: pointer;
+}
+
+.alt {
+    position: relative;
+    transform: translate(71%, -10PX);
 }
