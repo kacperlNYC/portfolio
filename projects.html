@@ -7,6 +7,7 @@
     <title>Projects</title>
     <link href="css/style.css" rel="stylesheet">
     <link href="css/projects.css" rel="stylesheet">
+    <script type="text/javascript" src="js/script.js"></script>
 </head>
 <body>
     <nav>
@@ -26,8 +27,10 @@
             <div class="info">
                 <h2>Ai Character Generator</h2>
                 <a href="https://github.com/PaulShiLi/rpgGenerate-SpaceInvaders">https://github.com/PaulShiLi/rpgGenerate-SpaceInvaders</a>
-                <p>Over the summer of '22, I worked with a team of 5 others to train natural language processing AI models to make an RPG character generator. </p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis euismod felis vitae neque lacinia, nec hendrerit quam aliquam. Integer mi ex, imperdiet id massa a, porttitor elementum leo. Nunc lacinia urna sed mauris pulvinar pretium. Maecenas quis erat nulla. Curabitur ut rutrum libero. Duis in eleifend erat. Nulla ipsum leo, sodales sit amet vulputate a, hendrerit ac ex. Nulla facilisi. Suspendisse ultrices volutpat ipsum in vulputate. Suspendisse facilisis eget nibh at euismod.</p>
+                <p>Over the summer of '22, I worked with a team of 5 others to train natural language processing AI models to make an RPG character generator. The generator would be split up to three different AI models: Backstory, Personality, and Physical Descriptions. In addition to this, we only had two weeks to do it.</p>
+                <p>To get the large amount of training data for out models we had to scrape through countless websites, Dungeons & Dragons rulebooks, and even GPT-3 generated responses. After, we used the <b>aitextgen</b> Python library to train our Distil GPT-2 models on these datasets. This process took countless hours and sometimes even days.</p>
+                <p>To deploy these AI models for use, we then created a website using the Django framework and a Discord Bot. If you want to try to our AI models you can run either the website or Discord bot from our GitHub.</p>
+                <p></p>
 
             </div>
             <div class="gallery">
@@ -46,7 +49,7 @@
                 <p>As a challenging side-project, I attempted to create my own 3D engine with Java and it's built in 2D graphics library.</p>
                 <p>To create a simple cube, it required me to create a projection function that returns a transformed X and Y when given a Z value. Then, I researched rotational matrices and applied them to my program to rotate them on any axis.</p>
                 <p>After, I created other three dimensional shapes with customizable parameters such as heigth, length, and width. One of my  more customizable function also takes a value n to create an n-sided polyonal prism. This allowed me to easily create a simple triangular prism or a pentadecagonal prism.</p>
-                <p>I'm happy to have done this and I hope I can built upon it to add even more in the future.</p>
+                <p>I'm happy to have done this and I hope I can build upon it more in the future.</p>
             </div>
             <div class="gallery">
                 <img src="images/3D-engine/cube.png">
@@ -56,6 +59,23 @@
 
             </div>
         </div>
+
+        <div class="project" id="engine">
+            <div class="gallery">
+                <img src="images/ligthsaber/one.png">
+                <img src="images/ligthsaber/two.png" id="two">
+                <img src="images/ligthsaber/three.gif">
+            </div>
+            <div class="info">
+                <h2>Lightsaber CSS</h2>
+                <a href="https://github.com/kacperlet/lightsaber">https://github.com/kacperlet/lightsaber</a>
+                <p>After becoming more adept at web development and using CSS I decided to test my CSS skills by creating a ligthsaber with pure CSS. No images were used at all.</p>
+                <p>In less than two days I was able to create a ligthsaber with customizable colors, a retractable blade, a way to swing it using JavaScript, and audio cues for when you do swing it.</p>
+                <p>You can access a live demo of it below.</p>
+                <button onclick="redirect('https://kacperlet.github.io/lightsaber/');">Try It!</button>
+            </div>
+        </div>
+
     </main>
 
     <footer>
