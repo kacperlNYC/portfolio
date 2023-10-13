@@ -12,6 +12,11 @@
     text-align: justify;
 }
 
+.info a {
+    text-overflow: ellipsis;
+    max-width: 100%;
+}
+
 .info h2{
     background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
     -webkit-background-clip: text;
@@ -57,6 +62,7 @@ button:hover {
     .project {
         display: flex;
         gap: 50px;
+        align-items: center;
     }
 
     #engine {
@@ -68,9 +74,10 @@ button:hover {
         width: 30%;
         font-size: larger;
     }
-
+    
     .gallery {
         width: 70%;
+        height: min-content;
         display: grid;
         border-radius: 15px;
         padding: 10px;
@@ -80,6 +87,10 @@ button:hover {
 
         grid-template-columns: repeat(2, 1fr);
     }
+    
+
+    
+
 
     .gallery #two {
         grid-row: span 2;

@@ -75,8 +75,6 @@ main{
 @media screen and (max-width:1023px) {
     main {
         margin-top: -100px;
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(3, 1fr);
         margin-top: 0px;
     }
 
@@ -86,6 +84,11 @@ main{
         border-radius: 20px;
         display: flex;
         justify-content: center;
+        display: none;
+    }
+
+    main #text #desc {
+        font-size:28px;
     }
 
     .gradient {
@@ -94,7 +97,6 @@ main{
     
         background: linear-gradient(162deg, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
         transform: translate(-25px, -25px);
-
     }
 
     main img {
